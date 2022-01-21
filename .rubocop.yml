@@ -1,0 +1,12 @@
+AllCops:
+  NewCops: enable
+  Exclude:
+    - 'bin/**/*'
+    - 'config/**/*'
+    - 'db/**/*'
+    - 'db/seeds/**/*'
+    - 'engines/**/db/seeds/**/*'
+    - 'engines/**/db/migrate/**/*'
+
+Style/Documentation:
+  Enabled: false
