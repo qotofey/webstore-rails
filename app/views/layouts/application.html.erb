@@ -11,7 +11,22 @@
   </head>
 
   <body>
-    <%= link_to 'Categories', categories_path %>
+    <header class="header">
+      <form class="search-form">
+        <input type="search-form__input">
+        <button class="search-form__button">Найти</button>
+      </form>
+
+      <nav class="menu">
+        <ul class="menu__list menu__list_horizontal">
+          <li class="menu__elem"><%= link_to 'Categories', categories_path, class: 'menu__link' %></li>
+        </ul>
+      </nav>
+    </header>
     <%= yield %>
+
+    <footer>
+      <p>&copy; Qotofey <%= Time.now.year %></p>
+    </footer>
   </body>
 </html>
