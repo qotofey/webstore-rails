@@ -1,0 +1,9 @@
+ru:
+  mongoid:
+    models:
+      category: 'Категория'
+    attributes:
+      category:
+        name: 'Название'
+        examples: 'Набор примеров'
+        description: 'Описание'

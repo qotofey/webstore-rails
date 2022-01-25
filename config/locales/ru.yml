@@ -1,0 +1,19 @@
+ru:
+  menu:
+    home: 'Главная'
+    categories: 'Категории'
+  home:
+    index:
+      title: 'Добро пожаловать на мой сайт!'
+  action:
+    show: 'Показать'
+    back: 'Назад'
+    edit: 'Редактировать'
+    create: 'Создать'
+    destroy: 'Удалить'
+    confirmation_delete: 'Вы действительно хотите удалить эту запись?'
+  categories:
+    new:
+      title: 'Новая категория'
+    edit:
+      title: 'Редактирование категрии'

@@ -2,6 +2,7 @@
 
 class Category
   include Mongoid::Document
+  include Mongoid::Timestamps
 
   field :name, type: String
   field :examples, type: String
@@ -12,10 +13,11 @@ class Category
 
   # root.child_categories.build()
   # child.parent_category
-  # 
+  #
   recursively_embeds_many
 
   validates :name, presence: true, uniqueness: { case_sensitive: false }
+  validates :examples, presence: true
 
   before_validation :identifiers_preprocess, :names_preprocess
 

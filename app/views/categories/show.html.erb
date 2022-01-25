@@ -4,6 +4,23 @@
   <strong>Name:</strong>
   <%= @category.name %>
 </p>
+<p>
+  <strong>Examples:</strong>
+  <%= @category.examples %>
+</p>
+<p>
+  <strong>Description:</strong>
+  <%= @category.description %>
+</p>
+<p>
+  <strong>Created At:</strong>
+  <%= l(@category.created_at, format: :long) if @category.created_at %>
+</p>
+<p>
+  <strong>Updated At:</strong>
+  <%= l(@category.updated_at, format: :long) %>
+</p>
 
-<%= link_to 'Edit', edit_category_path(@category) %> |
-<%= link_to 'Back', categories_path %>
+<%= link_to t('action.edit'), edit_category_path(@category) %> |
+<%= link_to t('action.destroy'), categories_path(@category), method: :delete, data: { confirm: t('action.confirmation_delete') } %> |
+<%= link_to t('action.back'), categories_path %>
