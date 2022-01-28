@@ -13,6 +13,10 @@ ru:
     destroy: 'Удалить'
     confirmation_delete: 'Вы действительно хотите удалить эту запись?'
   categories:
+    index:
+      title: 'Категории'
+    show:
+      title: 'Категория'
     new:
       title: 'Новая категория'
     edit:
