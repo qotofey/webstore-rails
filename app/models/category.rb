@@ -30,6 +30,6 @@ class Category
   end
 
   def names_preprocess
-    self.name = name.strip.capitalize
+    self.name = name.strip
   end
 end

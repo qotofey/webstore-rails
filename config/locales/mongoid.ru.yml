@@ -7,3 +7,4 @@ ru:
         name: 'Название'
         examples: 'Набор примеров'
         description: 'Описание'
+        parent_category: 'Родительская категория'

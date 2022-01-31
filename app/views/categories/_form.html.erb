@@ -17,6 +17,11 @@
   </div>
 
   <div class="field">
+    <%= form.label :parent_category %>
+    <%= form.collection_select :parent_category, Category.all, :id, :name, { include_blank: true } %>
+  </div>
+
+  <div class="field">
     <%= form.label :examples %>
     <%= form.text_field :examples %>
   </div>
