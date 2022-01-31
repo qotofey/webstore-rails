@@ -3,6 +3,7 @@
 class Category
   include Mongoid::Document
   include Mongoid::Timestamps
+  include RecursivelyEmbeddable
 
   field :name, type: String
   field :examples, type: String
