@@ -15,7 +15,7 @@ class Category
   # root.child_categories.build()
   # child.parent_category
   #
-  recursively_embeds_many
+  #recursively_embeds_many
 
   validates :name, presence: true, uniqueness: { case_sensitive: false }
   validates :examples, presence: true
