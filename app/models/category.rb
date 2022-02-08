@@ -3,7 +3,7 @@
 class Category
   include Mongoid::Document
   include Mongoid::Timestamps
-  include RecursivelyEmbeddable
+  # include RecursivelyEmbeddable
 
   field :name, type: String
   field :examples, type: String
@@ -12,10 +12,16 @@ class Category
   field :created_by_user_id
   field :updated_by_user_id
 
+  embeds_many :category_fields, class_name: 'Category::Field'
+
+  accepts_nested_attributes_for :category_fields
+
+  attr_writer :parent_id
+
   # root.child_categories.build()
   # child.parent_category
   #
-  #recursively_embeds_many
+  # recursively_embeds_many
 
   validates :name, presence: true, uniqueness: { case_sensitive: false }
   validates :examples, presence: true

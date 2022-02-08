@@ -1,6 +1,7 @@
 ru:
   menu:
     home: 'Главная'
+    users: 'Пользователи'
     categories: 'Категории'
   home:
     index:
@@ -21,3 +22,12 @@ ru:
       title: 'Новая категория'
     edit:
       title: 'Редактирование категрии'
+  users:
+    index:
+      title: 'Пользователи'
+    show:
+      title: 'Пользователь'
+    new:
+      title: 'Новый пользователь'
+    edit:
+      title: 'Редактирование пользователя'
