@@ -9,6 +9,9 @@ class User
   field :birth_date, type: Date
   field :gender, type: String
 
+  embeds_many :roles
+  accepts_nested_attributes_for :roles
+
   # enum gender: {
   #   male: 'male',
   #   female: 'female'
